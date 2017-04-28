@@ -9,7 +9,7 @@ from settings.base import *
 app = Flask(__name__)
 
 
-my_debug = 1
+my_debug = 0
 
 
 #NOSip="127.0.0.1"
@@ -66,9 +66,9 @@ if __name__ == '__main__':
     #app.run(port=sys.argv[1])
     if my_debug == 0:
         if (sys.argv.__len__()>1):
-            app.run( host="127.0.0.1", port=sys.argv[1])
+            app.run( host="0.0.0.0", port=sys.argv[1])
         else:
-            app.run( host="127.0.0.1", port="5052")
+            app.run( host="0.0.0.0", port="5052")
     else:
         print ("debugeando")
         #infoInt=testGetSaturationIndex()

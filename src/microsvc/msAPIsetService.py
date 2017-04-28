@@ -138,9 +138,9 @@ api.add_resource(setService,'/setService/<string:serviceName>/<string:serviceIns
 if __name__ == '__main__':
     if my_debug == 0:
         if (sys.argv.__len__() > 1):
-            app.run(host="127.0.0.1", port=sys.argv[1])
+            app.run(host="0.0.0.0", port=sys.argv[1])
         else:
-            app.run(host="127.0.0.1", port="5054")
+            app.run(host="0.0.0.0", port="5054")
     else:
 
         datos = '{' \
