@@ -1,0 +1,7 @@
+msgetdevices:
+    build: ../../../
+    dockerfile: docker/stage/msGetDevices/Dockerfile
+    environment:
+      NSO_IP: 192.168.0.220
+    ports:
+      - "5052:5052"
