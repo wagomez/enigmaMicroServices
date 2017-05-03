@@ -1,0 +1,7 @@
+mssetservices:
+    build: ../../../
+    dockerfile: docker/stage/msAPIsetService/Dockerfile
+    environment:
+      NSO_IP: 192.168.0.220
+    ports:
+      - "5054:5054"
